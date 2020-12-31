@@ -1,0 +1,1504 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100&display=swap");
+@font-face {
+  src: url("../fonts/cubano-regular-webfont.ttf");
+  font-family: "cubano-regular";
+}
+
+@font-face {
+  src: url("../fonts/sofiapro-light.otf");
+  font-family: "sofia-pro";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 100vh;
+  background-color: #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #141418;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8, .app .app-header .tim1 .tim20 .tim14 .tim15 .tim16, .app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8 .tim9, .app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12, .app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 {
+  height: 48px;
+  border-radius: 5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.app .app-header .tim1 .tim21 .tim22 .tim23, .app .app-header .tim1 .tim21 .tim22 .tim24 {
+  width: 22px;
+  height: 1px;
+  position: absolute;
+  left: 13px;
+  background-color: #fff;
+}
+
+.app .app-header .tim1 .tim2 .tim3, .app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0px 12px;
+  overflow: hidden;
+  cursor: pointer;
+  pointer-events: all;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12 .tim13, .app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 .tim43 {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim52 .tim53, .app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .partner-heading .content-heading, .app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim85 .tim86 {
+  font-family: "cubano-regular";
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.app .app-main .tim28 .tim29 .tim31, .app .app-main .tim28 .tim29 .tim117, .app .app-main .tim28 .tim29 .tim146, .app .app-main .tim28 .tim29 .tim82 {
+  width: 95%;
+  height: auto;
+  position: relative;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #eee;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #eee;
+}
+
+.app .app-header {
+  width: 100%;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);
+          box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);
+  z-index: 10000;
+}
+
+.app .app-header .tim1 {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app .app-header .tim1 .tim2 {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-header .tim1 .tim2 .tim3 .tim4 {
+  letter-spacing: 2px;
+  font-family: "cubano-regular";
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.app .app-header .tim1 .tim2 .tim3 .tim5 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.app .app-header .tim1 .tim2 .tim3:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.app .app-header .tim1 .tim20 {
+  width: 65%;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-header .tim1 .tim20 .tim6 {
+  width: 60%;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 {
+  width: 100%;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8 .tim9 a {
+  height: 100%;
+  text-decoration: none;
+  padding: 0px 10px;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8 .tim9 a .tim10 {
+  font-family: "cubano-regular";
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 48px;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8 .tim9 a .tim11 {
+  width: 100%;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.app .app-header .tim1 .tim20 .tim6 .tim7 .tim8 .tim9:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.app .app-header .tim1 .tim20 .tim14 {
+  width: 20%;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 {
+  width: 100%;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12 {
+  width: 48px;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12 a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  z-index: 10000;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12 a i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.app .app-header .tim1 .tim20 .tim14 .tim15 .tim16 .tim12:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.app .app-header .tim1 .tim21 {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.app .app-header .tim1 .tim21 .tim22 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.app .app-header .tim1 .tim21 .tim22 .tim23 {
+  top: 18px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.app .app-header .tim1 .tim21 .tim22 .tim24 {
+  bottom: 18px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.app .app-header .tim1 .tim21 .tim22 .tim26 {
+  -webkit-transform: translate(0px, 5.5px) rotate(45deg);
+          transform: translate(0px, 5.5px) rotate(45deg);
+}
+
+.app .app-header .tim1 .tim21 .tim22 .tim27 {
+  -webkit-transform: translate(0px, -5.5px) rotate(-45deg);
+          transform: translate(0px, -5.5px) rotate(-45deg);
+}
+
+.app .app-header .tim1 .tim21:hover {
+  background-color: rgba(225, 225, 225, 0.14);
+}
+
+.app .app-main {
+  width: 100%;
+  height: auto;
+}
+
+.app .app-main .tim28 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-main .tim28 .tim29 {
+  width: 100%;
+  height: 100%;
+  background-color: #202026;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.app .app-main .tim28 .tim29 .tim30 {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+          transform: translate3d(0px, 0px, 0px);
+}
+
+.app .app-main .tim28 .tim29 .tim31 {
+  background-color: #292d3e;
+  margin: -70px auto 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-bottom: 70px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim33 {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim33 .tim34 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 .tim36 {
+  height: 100%;
+  color: #3c4858;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 .tim36 .tim37 {
+  font-family: "cubano-regular";
+  font-size: 60px;
+  margin: 80px 0px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 .tim36 .tim38 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 .tim36 .tim39 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim35 .tim36 .tim39 .fas {
+  font-weight: 900;
+  margin: 0px 5px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 {
+  max-width: 156px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 {
+  width: 48px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  z-index: 10000;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 a i {
+  font-size: 18px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 a .fa-linkedin {
+  color: #0976b4;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 a .fa-twitter {
+  color: #00acee;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim40 .tim41 .tim42 a .fa-github {
+  color: #ffffff;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim46 {
+  max-width: 600px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim46 .tim47 {
+  color: #858585;
+  margin: 15px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim46 .tim47 .tim48 {
+  text-decoration: none;
+  color: #9c27b0;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 {
+  max-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 0px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 {
+  max-width: 48%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim51 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim51 .smile {
+  color: #777;
+  font-size: 70px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim52 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim52 .tim53 {
+  color: #3c4858;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim52 .tim54 {
+  text-align: left;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  margin: 10px 0px;
+  color: #707070;
+  line-height: 25px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim52 .tim54 b {
+  font-weight: 800;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 {
+  width: 144px;
+  height: 40px;
+  margin: 15px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56 {
+  background-color: #00acc1;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 188, 212, 0.14), 0 3px 1px -2px rgba(0, 188, 212, 0.2), 0 1px 5px 0 rgba(0, 188, 212, 0.12);
+          box-shadow: 0 2px 2px 0 rgba(0, 188, 212, 0.14), 0 3px 1px -2px rgba(0, 188, 212, 0.2), 0 1px 5px 0 rgba(0, 188, 212, 0.12);
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56 .tim57 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56 .tim57 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56 .tim58 {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim50 .tim55 .tim56:hover {
+  -webkit-box-shadow: 0 14px 26px -12px rgba(0, 188, 212, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+          box-shadow: 0 14px 26px -12px rgba(0, 188, 212, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 {
+  width: 48%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #858585;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 {
+  width: 45%;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim62 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim62 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim73 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim73 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim62 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim62 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim73 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim73 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim62 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim62 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim73 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim73 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim62 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim62 .tim74,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim73 .tim63,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim73 .tim74 {
+  font-size: 25px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim64 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim64 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim75 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim61 .tim75 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim64 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim64 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim75 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim72 .tim75 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim64 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim64 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim75 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim61 .tim75 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim64 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim64 .tim76,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim75 .tim65,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim72 .tim75 .tim76 {
+  font-size: 16px;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim79,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim68,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim79 {
+  margin: 8px 0px;
+  padding: 12px 0px;
+  text-align: left;
+  border-bottom: 1px solid #858585;
+}
+
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim67 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim66 .tim78 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim67 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim60 .tim77 .tim78 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim67 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim66 .tim78 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim67 .tim79 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim68 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim68 .tim81,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim79 .tim70,
+.app .app-main .tim28 .tim29 .tim31 .tim32 .tim49 .tim59 .tim71 .tim77 .tim78 .tim79 .tim81 {
+  margin-left: 10px;
+}
+
+.app .app-main .tim28 .tim29 .tim117 {
+  background-color: #292d3e;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 {
+  width: 100%;
+  height: 90%;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim120 {
+  height: auto;
+  background-color: #3c4858;
+  text-align: center;
+  color: #1a1a1b;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim120 .tim121 {
+  font-family: "cubano-regular";
+  font-size: 38px;
+  padding: 60px 0 30px;
+  margin: 0 auto;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim120 .tim122 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 0 0 20px;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 {
+  width: 100%;
+  height: auto;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3rem;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim126 {
+  width: 100%;
+  height: auto;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim126 a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim126 a .tim127 {
+  width: 100%;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim126 a .tim127 img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim128 {
+  height: auto;
+  padding: 20px 0;
+  color: #716e6e;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim128 .tim129 .tim130 {
+  font-family: "cubano-regular";
+  font-size: 24px;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim128 .tim129 .tim131 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim128 .tim132 {
+  padding: 0 5px;
+}
+
+.app .app-main .tim28 .tim29 .tim117 .tim118 .tim119 .tim123 .tim124 .tim125 .tim128 .tim132 .tim133 {
+  font-family: "sofia-pro";
+}
+
+.app .app-main .tim28 .tim29 .tim146 {
+  background-color: #292d3e;
+  margin: 0px auto 10px;
+  overflow: hidden;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 {
+  width: 90%;
+  height: 100%;
+  margin: 30px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .partner-heading {
+  margin: 50px 0px 80px;
+  text-align: center;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .partner-heading .content-heading {
+  font-size: 58px;
+  color: #3c4858;
+  margin: 0;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 {
+  width: 100%;
+  height: auto;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151 {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151 .tim152 {
+  text-decoration: none;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151 .tim152 .tim153 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151::after {
+  content: "";
+  width: 80px;
+  height: 160px;
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.28);
+  top: 0;
+  left: -160px;
+  opacity: 0;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translate(0px, 0px) skewX(-15deg);
+          transform: translate(0px, 0px) skewX(-15deg);
+  cursor: pointer;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151::before {
+  content: "";
+  width: 80px;
+  height: 160px;
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.28);
+  top: 0;
+  left: -80px;
+  opacity: 0;
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+  -webkit-transform: translate(0px, 0px) skewX(15deg);
+          transform: translate(0px, 0px) skewX(15deg);
+  cursor: pointer;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151:hover::after {
+  -webkit-transform: translate(400px, 0px) skewX(-15deg);
+          transform: translate(400px, 0px) skewX(-15deg);
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0.24, 0.69, 0.57, 0.95);
+  transition: all 0.6s cubic-bezier(0.24, 0.69, 0.57, 0.95);
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim151:hover::before {
+  -webkit-transform: translate(400px, 0px) skewX(-15deg);
+          transform: translate(400px, 0px) skewX(-15deg);
+  opacity: 0.6;
+  -webkit-transition: all 0.6s cubic-bezier(0.24, 0.69, 0.57, 0.95);
+  transition: all 0.6s cubic-bezier(0.24, 0.69, 0.57, 0.95);
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim154 {
+  width: 100%;
+  height: 100%;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim154 .tim155 {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0px 0px 100px;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim154 .tim155 .tim156 .tim157 {
+  font-family: "cubano-regular";
+  color: #3c4858;
+  font-size: 22px;
+  margin: 15px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim146 .tim147 .tim148 .tim149 .tim150 .tim154 .tim155 .tim158 .tim159 {
+  font-family: "sofia-pro";
+  color: #858585;
+  font-size: 17px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 {
+  margin: 0px auto 10px;
+  overflow: hidden;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../images/contact.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 10001;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim85 {
+  max-width: 100%;
+  height: auto;
+  padding: 100px 0px;
+  color: #282c34;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim85 .tim86 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim85 .tim87 {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0px;
+  padding: 0;
+  text-align: center;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap: 15%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 0px 15%;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  background-color: rgba(40, 42, 54, 0.9);
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.45), 0px 6px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.45), 0px 6px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim90 {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: -60px auto 0px;
+  pointer-events: none;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim90 .tim91 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.24), 0 12px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim92 {
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim92 .tim93 {
+  max-width: 75%;
+  height: 100%;
+  color: #a5a5a5;
+  margin: 0 auto;
+  padding: 0px 0px 30px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim92 .tim93 .tim94 {
+  font-family: "cubano-regular";
+  font-size: 20px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim92 .tim93 .tim95 {
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 20px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89 .tim92 .tim93 .tim96 {
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.app .app-main .tim28 .tim29 .tim82 .tim83 .tim84 .tim88 .tim89:hover {
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+
+.app .app-footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #202026;
+}
+
+.app .app-footer .tim97 {
+  width: 95%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  background-color: #292d3e;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.35);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 40px;
+}
+
+.app .app-footer .tim97 .tim98 {
+  width: 45%;
+  height: 100%;
+  margin: 10px auto;
+  background-color: #292d3e;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app .app-footer .tim97 .tim98 .tim99 .tim100 {
+  text-align: left;
+  line-height: 60px;
+}
+
+.app .app-footer .tim97 .tim98 .tim99 .tim100 .tim101 {
+  font-family: "Roboto Slab", serif;
+  font-size: 38px;
+  color: #777;
+}
+
+.app .app-footer .tim97 .tim98 .tim99 .tim100 .tim102 {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 {
+  width: 100%;
+  height: auto;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 {
+  max-width: 90%;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 .tim105 {
+  text-align: left;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 .tim105 .tim106 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #777;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 .tim105 .tim106 .tim107 .tim108 {
+  font-size: 36px;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 .tim105 .tim106 .tim109 .tim110 {
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.app .app-footer .tim97 .tim98 .tim103 .tim104 .tim105 .tim111 .tim112 {
+  font-family: "Roboto", serif;
+  font-size: 17px;
+  color: #4a4a4a;
+}
+
+.app .app-footer .tim97 .tim160 {
+  width: 45%;
+  height: 100%;
+  margin: 10px auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app .app-footer .tim97 .tim160 svg#ae37f038-3a9e-4b82-ad68-fc94ba16af2a {
+  width: 100%;
+}
+
+span.tim19 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(225, 225, 225, 0.14);
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: all;
+  -webkit-animation: animate 0.45s linear;
+          animation: animate 0.45s linear;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2.8);
+            transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tim1 {
+    position: relative;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    max-width: 950px !important;
+    height: 48px;
+  }
+  .tim1 .tim2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .tim1 .tim20 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 200px !important;
+    height: 100vh !important;
+    background-color: #282c34;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    -webkit-clip-path: inset(0 0 0 100%);
+            clip-path: inset(0 0 0 100%);
+    pointer-events: none;
+    -webkit-box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2), 0 7px 12px -5px rgba(33, 33, 33, 0.5);
+            box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.2), 0 7px 12px -5px rgba(33, 33, 33, 0.5);
+    -webkit-transition: all 0.5s cubic-bezier(0.24, 0.51, 0.65, 0.93);
+    transition: all 0.5s cubic-bezier(0.24, 0.51, 0.65, 0.93);
+    z-index: 1000;
+  }
+  .tim1 .tim20 .tim6 {
+    top: 0;
+    margin: 20px auto;
+  }
+  .tim1 .tim20 .tim6 .tim8 {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .tim1 .tim20 .tim6 .tim8 .tim9 {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  .tim1 .tim20 .tim14 {
+    width: 60% !important;
+    bottom: 0;
+    margin: 0 auto;
+  }
+  .tim1 .tim20 .tim14 .tim16 {
+    -webkit-transition: all 0.6s cubic-bezier(0.04, 0.74, 0.64, 0.96);
+    transition: all 0.6s cubic-bezier(0.04, 0.74, 0.64, 0.96);
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .tim1 .tim20.tim25 {
+    -webkit-clip-path: inset(0 0 0 0%);
+            clip-path: inset(0 0 0 0%);
+    pointer-events: all;
+  }
+  .tim1 .tim21 {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+  }
+  .tim49 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tim49 .tim59 {
+    width: 68% !important;
+  }
+  .tim88 {
+    grid-column-gap: 0% !important;
+    grid-row-gap: 0% !important;
+  }
+  .tim88 .tim89 {
+    margin: 60px 0px;
+  }
+  .tim88 .tim89:nth-child(n) {
+    grid-area: span n / span 3 / span n / span 3;
+  }
+  .tim124 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tim124 .tim125 {
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (min-width: 560px) and (max-width: 950px) {
+  .tim50 {
+    max-width: 68% !important;
+  }
+  .tim124 .tim125 {
+    width: 65% !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tim50 {
+    max-width: 100% !important;
+  }
+  .tim59 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tim59 .tim60,
+  .tim59 .tim71 {
+    width: 100% !important;
+  }
+  .tim86 {
+    font-size: 34px !important;
+  }
+  .tim87 {
+    font-size: 15px !important;
+  }
+  .tim101 {
+    font-size: 36px !important;
+  }
+  .tim102 {
+    font-size: 16px !important;
+  }
+  .tim110 {
+    font-size: 19px !important;
+  }
+  .tim112 {
+    font-size: 15px !important;
+  }
+  .content-heading {
+    font-size: 40px !important;
+  }
+  .tim124 .tim125 {
+    width: 85% !important;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .tim97 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .tim97 .tim98 {
+    width: 100% !important;
+  }
+  .tim97 .tim160 {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=app.css.map */
