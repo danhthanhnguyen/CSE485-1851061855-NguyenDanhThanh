@@ -38,7 +38,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <img src="data:image/jpg;base64,<?php echo base64_encode($projects[0]["thumbnail"]); ?>" alt="">
+                <img src="<?php echo $projects[0]["thumbnail"]; ?>" alt="">
                 <div class="jumbotron text-left">
                   <p><strong>ID:</strong> <?php echo $projects[0]["id_projects"]; ?></p>
                   <p><strong>Name:</strong> <?php echo ucwords($projects[0]["name"]); ?></p>
