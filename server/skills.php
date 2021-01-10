@@ -79,7 +79,7 @@
                               <td class="text-right">
                                 <a href="detail_skills.php?id='.$skill["id_skills"].'" class="btn btn-outline-dark btn-rounded"
                                   ><i class="fas fa-info-circle"></i></a>
-                                <a href="" class="btn btn-outline-info btn-rounded"
+                                <a href="'.constant("URL").'/server/update/edit_skills.php?id='.$skill["id_skills"].'" class="btn btn-outline-info btn-rounded"
                                   ><i class="fas fa-pen"></i
                                 ></a>
                                 <button value="'.$skill["id_skills"].'" onclick="deleteSkills(this)" class="btn btn-outline-danger btn-rounded"
