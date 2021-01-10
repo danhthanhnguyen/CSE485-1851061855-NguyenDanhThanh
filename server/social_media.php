@@ -79,7 +79,7 @@
                               <td class="text-right">
                                 <a href="detail_sm.php?id='.$sm["id_sm"].'" class="btn btn-outline-dark btn-rounded"
                                   ><i class="fas fa-info-circle"></i></a>
-                                <a href="" class="btn btn-outline-info btn-rounded"
+                                <a href="'.constant("URL").'/server/update/edit_sm.php?id='.$sm["id_sm"].'" class="btn btn-outline-info btn-rounded"
                                   ><i class="fas fa-pen"></i
                                 ></a>
                                 <button value="'.$sm["id_sm"].'" onclick="deleteMedia(this)" class="btn btn-outline-danger btn-rounded"
