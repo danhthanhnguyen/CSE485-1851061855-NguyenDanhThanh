@@ -1,11 +1,11 @@
 <div class="app-main">
   <section class="tim28">
     <div class="tim29">
-      <div style="background-image:url(<?php echo 'data:image/jpg;base64,'.base64_encode($admin[0]["background"]); ?>)" id="about" class="tim30"></div>
+      <div style="background-image:url(<?php echo $admin[0]["background"]; ?>)" id="about" class="tim30"></div>
       <div id="portfolio" class="tim31">
         <div class="tim32">
           <div class="tim33">
-            <img class="tim34" src="<?php echo 'data:image/jpg;base64,'.base64_encode($admin[0]["avatar"]); ?>" alt="" />
+            <img class="tim34" src="<?php echo $admin[0]["avatar"]; ?>" alt="" />
           </div>
           <div class="tim35">
             <div class="tim36">
@@ -161,7 +161,7 @@
                           <div class="tim126">
                             <a href="'.$project["link"].'">
                               <div class="tim127">
-                                <img src="data:image;base64,'.base64_encode($project["thumbnail"]).'" alt="">
+                                <img src="'.$project["thumbnail"].'" alt="">
                               </div>
                             </a>
                           </div>
@@ -201,7 +201,7 @@
                           <div class="tim150">
                             <div class="tim151">
                               <a class="tim152" href="'.$partner["link"].'" target="_blank" rel="noopener noreferrer">
-                                <img class="tim153" src="data:image/jpg;base64,'.base64_encode($partner["logo"]).'" alt=""/>
+                                <img class="tim153" src="'.$partner["logo"].'" alt=""/>
                               </a>
                             </div>
                             <div class="tim154">
@@ -245,7 +245,7 @@
                     echo '
                       <div class="tim89">
                         <div class="tim90">
-                          <img class="tim91" src="data:image/jpg;base64,'.base64_encode($myteam["avatar"]).'" alt=""/>
+                          <img class="tim91" src="'.$myteam["avatar"].'" alt=""/>
                         </div>
                         <div class="tim92">
                           <div class="tim93">
