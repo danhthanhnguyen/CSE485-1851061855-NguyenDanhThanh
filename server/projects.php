@@ -81,7 +81,7 @@
                               <td class="text-right">
                                 <a href="detail_projects.php?id='.$project["id_projects"].'" class="btn btn-outline-dark btn-rounded"
                                   ><i class="fas fa-info-circle"></i></a>
-                                <a href="" class="btn btn-outline-info btn-rounded"
+                                <a href="'.constant("URL").'/server/update/edit_projects.php?id='.$project["id_projects"].'" class="btn btn-outline-info btn-rounded"
                                   ><i class="fas fa-pen"></i
                                 ></a>
                                 <button value="'.$project["id_projects"].'" onclick="deleteProjects(this)" class="btn btn-outline-danger btn-rounded"
