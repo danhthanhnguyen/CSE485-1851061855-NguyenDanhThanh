@@ -1,0 +1,29 @@
+@font-face {
+  src: url("../../fonts/cubano-regular-webfont.ttf");
+  font-family: "cubano-regular";
+}
+
+.heading {
+  font-family: "cubano-regular";
+  font-size: 2.6rem;
+}
+
+.box-body {
+  padding-top: 80px;
+}
+
+.box-body .field-data {
+  width: 560px;
+  max-width: 100%;
+  background-color: #dbd9d933;
+  padding: 5px 12px;
+  -webkit-box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.03), 0 12px 10px -5px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 8px 15px -8px rgba(0, 0, 0, 0.03), 0 12px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.box-body img {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+/*# sourceMappingURL=add.css.map */
