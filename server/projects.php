@@ -46,7 +46,7 @@
               <h3>
                 My Projects
                 <a
-                  href="roles.html"
+                  href="<?php echo constant("URL")."/server/update/add_projects.php"; ?>"
                   class="btn btn-sm btn-outline-primary float-right"
                   ><i class="fas fa-plus-circle"></i> Add</a
                 >
