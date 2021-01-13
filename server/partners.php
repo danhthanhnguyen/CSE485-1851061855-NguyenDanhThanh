@@ -46,21 +46,33 @@
               <h3>
                 My Partners
                 <a
-                  href="roles.html"
+                  href="<?php echo constant("URL")."/server/update/add_partners.php"; ?>"
                   class="btn btn-sm btn-outline-primary float-right"
                   ><i class="fas fa-plus-circle"></i> Add</a
                 >
-                <a
-                  href="roles.html"
-                  class="btn btn-sm btn-outline-primary float-right mr-1"
-                  ><i class="fas fa-cloud-upload-alt"></i> Import</a
-                >
+                <button onclick="showImport('#importFrame')" style="cursor:pointer" class="btn btn-sm btn-outline-primary float-right mr-1">
+                  <i class="fas fa-cloud-upload-alt"></i> Load CSV
+                </button>
               </h3>
+            </div>
+            <?php
+              if(isset($_SESSION["err-csv"])) {
+                echo '
+                  <div class="alert alert-danger text-center">
+                    '.$_SESSION["err-csv"].'
+                  </div>
+                ';
+                unset($_SESSION["err-csv"]);
+              }
+            ?>
+            <div style="display:none;border:2px dashed #007bff;margin:1.6rem 0;padding:2rem" id="importFrame">
+              <form style="max-width:80%;margin:0 auto" action="./import/importCSV.php" method="POST" enctype="multipart/form-data">
+                <input class="mt-1 mb-1" id="import-csv" type="file" name="csv">
+                <button name="import-csv-file" class="btn btn-sm btn-outline-primary mt-1 mb-1" type="submit"><i class="fas fa-upload"></i> Import</button>
+              </form>
             </div>
             <div class="box box-primary">
               <div class="box-body">
-              <form action="">
-              </form>
                 <table
                   width="100%"
                   class="table table-hover display nowrap"
@@ -140,5 +152,11 @@
     <script src="./js/dashboard.js"></script>
     <script src="./js/datatable.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+      function showImport(id) {
+        const importCSV = document.querySelector(id);
+        importCSV.style.display = (importCSV.style.display === "none") ? "block" : "none";
+      }
+    </script>
   </body>
 </html>
