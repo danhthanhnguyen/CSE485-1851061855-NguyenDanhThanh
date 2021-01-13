@@ -1,6 +1,7 @@
 <?php
   include("./config/path.php");
   require("./database/dbfunction.php");
+  session_start();
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,7 +44,6 @@
             <div class="card-body">
               <h5 class="card-title text-center">Reset your password</h5>
               <?php
-                session_start();
                 if(isset($_SESSION["error"])) {
                   echo '
                     <div class="alert alert-danger">'.$_SESSION["error"].'</div>
