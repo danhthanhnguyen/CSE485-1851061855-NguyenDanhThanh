@@ -159,7 +159,7 @@
                       echo '
                         <div class="tim125">
                           <div class="tim126">
-                            <a href="'.$project["link"].'">
+                            <a href="'.$project["link"].'" target="_blank">
                               <div class="tim127">
                                 <img src="'.$project["thumbnail"].'" alt="">
                               </div>
