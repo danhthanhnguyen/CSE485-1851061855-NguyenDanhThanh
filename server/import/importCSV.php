@@ -18,7 +18,13 @@
           $description = $record[5];
           $createAt = $record[6];
           $logo = $record[7];
-          queryManipulation("INSERT INTO partners(company, email, field, headquarter, link, description, logo, create_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?)", "set", [$company, $email, $field, $headquarter, $link, $description, $logo, $createAt]);
+          //check record conflict
+          $checkPartner = queryManipulation("SELECT id_partners FROM partners WHERE company=?", "get", [$company]);
+          if(count($checkPartner) > 0) {
+            queryManipulation("UPDATE partners SET logo=?, company=?, email=?, link=?, description=?, headquarter=?, field=?, create_at=? WHERE company=?", "set", [$logo, $company, $email, $link, $description, $headquarter, $field, $createAt, $company]);
+          } else {
+            queryManipulation("INSERT INTO partners(company, email, field, headquarter, link, description, logo, create_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?)", "set", [$company, $email, $field, $headquarter, $link, $description, $logo, $createAt]);
+          }
         }
         fclose($readCSV);
       } else {
