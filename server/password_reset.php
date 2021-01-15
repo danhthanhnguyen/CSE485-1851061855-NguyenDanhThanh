@@ -51,7 +51,7 @@
                   unset($_SESSION["error"]);
                 }
                 if(isset($_REQUEST["es"])) {
-                  if($_SESSION["send"]) {
+                  if(isset($_SESSION["send"])) {
                     echo '
                       <form class="form-signin" action="" method="POST" enctype="multipart/form-data">
                         <div class="form-label-group">
