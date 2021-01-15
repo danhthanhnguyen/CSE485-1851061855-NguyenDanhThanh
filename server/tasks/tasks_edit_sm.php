@@ -5,7 +5,6 @@
     $name = $_REQUEST["name"];
     $link = $_REQUEST["link"];
     $icon = $_REQUEST["icon"];
-    echo $name.$link.$icon;
     queryManipulation("UPDATE social_media SET name=?, link=?, icon=? WHERE id_sm=?", "set", [$name, $link, $icon, $getIdSocialMedia]);
   }
 ?>
