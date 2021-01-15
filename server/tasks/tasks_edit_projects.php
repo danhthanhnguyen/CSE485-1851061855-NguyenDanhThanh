@@ -12,7 +12,6 @@
     $link = $_REQUEST["link"];
     $description = $_REQUEST["description"];
     $createAt = $_REQUEST["create"];
-    echo $name.$platform.$link.$description.$createAt;
     queryManipulation("UPDATE projects SET name=?, platform=?, link=?, description=?, create_at=? WHERE id_projects=?", "set", [$name, $platform, $link, $description, $createAt, $getIdProjects]);
   }
 ?>
