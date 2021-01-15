@@ -9,7 +9,14 @@
     $headquarter = $_REQUEST["headquarter"];
     $field = $_REQUEST["field"];
     $createAt = $_REQUEST["create"];
-    queryManipulation("INSERT INTO partners(company, logo, email, link, description, headquarter, field, create_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?)", "set", [$company, $logo, $email, $link, $description, $headquarter, $field, $createAt]);
-    echo "Done!";
+    //check record conflict
+    $checkPartner = queryManipulation("SELECT company FROM partners WHERE company=?", "get", [$company]);
+    if(count($checkPartner) > 0) {
+      echo "This partner already exists";
+      return;
+    } else {
+      queryManipulation("INSERT INTO partners(company, logo, email, link, description, headquarter, field, create_at) VALUES(?, ?, ?, ?, ?, ?, ?, ?)", "set", [$company, $logo, $email, $link, $description, $headquarter, $field, $createAt]);
+      echo "Done!";
+    }
   }
 ?>
