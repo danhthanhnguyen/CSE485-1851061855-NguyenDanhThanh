@@ -5,7 +5,14 @@
     $avatar = $_REQUEST["avatar"];
     $job = $_REQUEST["job"];
     $slogan = $_REQUEST["slogan"];
-    queryManipulation("INSERT INTO team(name, avatar, job, slogan) VALUES(?, ?, ?, ?)", "set", [$name, $avatar, $job, $slogan]);
-    echo "Done!";
+    //check record conflict
+    $checkTeam = queryManipulation("SELECT name FROM team WHERE name=?", "get", [$name]);
+    if(count($checkTeam) > 0) {
+      echo "This member already exists";
+      return;
+    } else {
+      queryManipulation("INSERT INTO team(name, avatar, job, slogan) VALUES(?, ?, ?, ?)", "set", [$name, $avatar, $job, $slogan]);
+      echo "Done!";
+    }
   }
 ?>
