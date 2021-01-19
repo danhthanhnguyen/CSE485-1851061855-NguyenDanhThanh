@@ -5,7 +5,7 @@
   if(isset($_POST["import-csv-file"])) {
     $csvExtension = array('text/x-comma-separated-values', 'text/comma-separated-values', 'application/octet-stream', 'application/vnd.ms-excel', 'application/x-csv', 'text/x-csv', 'text/csv', 'application/csv', 'application/excel', 'application/vnd.msexcel', 'text/plain');
     $csv = $_FILES["csv"];
-    if($csv["name"] != "" && in_array($csv["type"], $csvExtension)) {
+    if($csv["name"] != "" && $csv["type"] == "application/vnd.ms-excel") {
       if(is_uploaded_file($csv["tmp_name"])) {
         $readCSV = fopen($csv["tmp_name"], 'r');
         fgetcsv($readCSV);
